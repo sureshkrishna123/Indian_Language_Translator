@@ -16,3 +16,9 @@ This code works for eveny language. You have to provide the audio file and audio
 Using google speech recognition, it will give speech to text and after using gooogletrans, convert the text to english.
 
 Note: No need google cloud subscription. Free to use.
+
+2. Text to Speech language translation
+
+For example, if you given the text my name is suresh, first using googletrans it will convert the desired language you want
+
+After using gTTS, It will convert to speech and display audio and translated text.
