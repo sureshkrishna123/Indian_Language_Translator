@@ -258,43 +258,12 @@ if app_mode=='text to speech':
     elif output_language == 'urdu':
         output_lang= 'ur'  
         
-    english_accent = st.selectbox(
-        "Select your english accent",
-        (
-            "Default",
-            "India",
-            "United Kingdom",
-            "United States",
-            "Canada",
-            "Australia",
-            "Ireland",
-            "South Africa",
-        ),
-    )
-
-    if english_accent == "Default":
-        tld = "com"
-    elif english_accent == "India":
-        tld = "co.in"
-
-    elif english_accent == "United Kingdom":
-        tld = "co.uk"
-    elif english_accent == "United States":
-        tld = "com"
-    elif english_accent == "Canada":
-        tld = "ca"
-    elif english_accent == "Australia":
-        tld = "com.au"
-    elif english_accent == "Ireland":
-        tld = "ie"
-    elif english_accent == "South Africa":
-        tld = "co.za"
     
     
-    def text_to_speech(input_language, output_language, text, tld):
+    def text_to_speech(input_language, output_language, text):
         translation = translator.translate(text, src=input_lang, dest=output_lang)
         trans_text = translation.text
-        tts = gTTS(trans_text, lang=output_lang, tld=tld, slow=False)
+        tts = gTTS(trans_text, lang=output_lang, slow=False)
         try:
             my_file_name = text[0:20]
         except:
@@ -305,7 +274,7 @@ if app_mode=='text to speech':
     display_output_text = st.checkbox("Display output text")
 
     if st.button("convert"):
-        result, output_text = text_to_speech(input_lang, output_lang, text, tld)
+        result, output_text = text_to_speech(input_lang, output_lang, text)
         audio_file = open(f"temp/{result}.mp3", "rb")
         audio_bytes = audio_file.read()
         st.markdown(f"## Your audio:")
