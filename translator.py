@@ -19,8 +19,7 @@ from PIL import ImageDraw
 import json
 import googletrans
 from googletrans import Translator
-from IPython.display import Audio
-import speech_recognition as sr
+
 
 
 
