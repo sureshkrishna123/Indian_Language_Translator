@@ -135,11 +135,17 @@ if app_mode=='Language Translation':
   st.markdown('---')
 
 if app_mode=='audio':
+    
     st.image(os.path.join('./images','translate.jpg'),use_column_width=True )
-    st.title("Language Translation")
+    st.title("Text to speech")
     st.header('Language translation taking text as an input')
     st.markdown("Using googletrans library to detect and translate the text to your desired language")
   #st.text("Detect the objects in images")
+    try:
+        os.mkdir("temp")
+    except:
+        pass
+    translator = Translator()
   
     detect=st.text_input('Enter the text to convert to speech (No language Restriction):')
 
