@@ -6,6 +6,7 @@ Streamlit helps us to built web application using just python code. Here is the 
 
 Here translator.py file is the code used for web aplication.
 
+
 ![image](https://user-images.githubusercontent.com/62717096/225824461-64fab5e6-35cf-4f26-a4e4-90397216600e.png)
 
 
@@ -22,3 +23,6 @@ Note: No need google cloud subscription. Free to use.
 For example, if you given the text my name is suresh, first using googletrans it will convert the desired language you want
 
 After using gTTS, It will convert to speech and display audio and translated text.
+
+
+![image](https://user-images.githubusercontent.com/62717096/225906370-0cf6bb5f-f361-4cbf-b571-e5c379ba5596.png)
