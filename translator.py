@@ -146,7 +146,7 @@ if app_mode=='audio':
         pass
     translator = Translator()
   
-    detect=st.text_input('Enter the text to convert to speech (No language Restriction):')
+    text=st.text_input('Enter the text to convert to speech (No language Restriction):')
 
     input_text=st.selectbox("select language to of the text" ,['arabic','bangla','chinese','dutch','english','french','german','greek','hindi','hungarian','indonesian','irish','italian','japanese','kannada','korean','malayalam','nepali','portuguese','punjabi','russian','spanish','tamil','telugu','turkish','urdu'],key=1)
     
