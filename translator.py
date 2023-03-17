@@ -257,6 +257,38 @@ if app_mode=='audio':
         output_lang= 'tr'
     elif output_language == 'urdu':
         output_lang= 'ur'  
+        
+    english_accent = st.selectbox(
+        "Select your english accent",
+        (
+            "Default",
+            "India",
+            "United Kingdom",
+            "United States",
+            "Canada",
+            "Australia",
+            "Ireland",
+            "South Africa",
+        ),
+    )
+
+    if english_accent == "Default":
+        tld = "com"
+    elif english_accent == "India":
+        tld = "co.in"
+
+    elif english_accent == "United Kingdom":
+        tld = "co.uk"
+    elif english_accent == "United States":
+        tld = "com"
+    elif english_accent == "Canada":
+        tld = "ca"
+    elif english_accent == "Australia":
+        tld = "com.au"
+    elif english_accent == "Ireland":
+        tld = "ie"
+    elif english_accent == "South Africa":
+        tld = "co.za"
     
     
     def text_to_speech(input_language, output_language, text, tld):
