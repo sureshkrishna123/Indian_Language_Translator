@@ -31,7 +31,7 @@ st.sidebar.markdown('It can translate any language (default-"english")')
 
 app_mode = st.sidebar.radio(
     "",
-    ("About Me","Language Translation","audio"),
+    ("About Me","Language Translation","text to speech"),
 )
 
 
@@ -133,7 +133,7 @@ if app_mode=='Language Translation':
 
   st.markdown('---')
 
-if app_mode=='audio':
+if app_mode=='text to speech':
     
     st.image(os.path.join('./images','translate.jpg'),use_column_width=True )
     st.title("Text to speech")
