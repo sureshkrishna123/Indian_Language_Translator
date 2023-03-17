@@ -3,3 +3,4 @@ streamlit
 streamlit-webrtc
 IPython
 SpeechRecognition
+gTTS
