@@ -311,5 +311,5 @@ if app_mode=='speech to text':
         ></script>
 
         <gradio-app src="https://sureshkrishna22-automatic-speech-recognition-and-translation.hf.space"></gradio-app>
-        """
+        """,height=1000,
         )
