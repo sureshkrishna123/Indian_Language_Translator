@@ -310,4 +310,7 @@ if app_mode=='speech to text':
     st.title("Speech to Text")
     st.header('Language translation taking text as an input')
     st.markdown("Using googletrans library to detect and translate the text to your desired language")
-    st.markdown("""<gradio-app src="https://sureshkrishna22-automatic-speech-recognition-and-translation.hf.space"></gradio-app>""",unsafe_allow_html=True,)
+    st.markdown("""
+        <gradio-app src="https://sureshkrishna22-automatic-speech-recognition-and-translation.hf.space"></gradio-app>
+        """,unsafe_allow_html=True,
+               )
