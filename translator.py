@@ -305,6 +305,8 @@ if app_mode=='speech to text':
     st.title("Speech to Text")
     st.header('Language translation taking text as an input')
     st.markdown("Using googletrans library to detect and translate the text to your desired language")
+    st.text("Refer this link to find the language codes for src_lang and tgt_lang -  https://cloud.google.com/speech-to-text/docs/speech-to-text-supported-languages")
+    st.text("Example: give src_lang = en and tgt_lang = te. Means, the source language is english(i.e.,english audio) and target language is telugu")
     html("""<script
 	    type="module"
 	    src="https://gradio.s3-us-west-2.amazonaws.com/3.24.1/gradio.js"
