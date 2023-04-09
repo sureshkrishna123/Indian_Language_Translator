@@ -31,7 +31,7 @@ st.sidebar.markdown('It can translate any language (default-"english")')
 
 app_mode = st.sidebar.radio(
     "",
-    ("About Me","text to text","text to speech","speech to text","speech to speech"),
+    ("About Me","text to text","text to speech","speech to text"),
 )
 
 
