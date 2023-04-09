@@ -6,6 +6,9 @@ Streamlit helps us to built web application using just python code. Here is the 
 
 Here translator.py file is the code used for web aplication.
 
+To know more about the src_lang and tgt_lang codes, check out the reference at https://cloud.google.com/speech-to-text/docs/speech-to-text-supported-languages
+
+In this, you can find the supported language codes.
 
 ![image](https://user-images.githubusercontent.com/62717096/225824461-64fab5e6-35cf-4f26-a4e4-90397216600e.png)
 
@@ -26,3 +29,5 @@ After using gTTS, It will convert to speech and display audio and translated tex
 
 
 ![image](https://user-images.githubusercontent.com/62717096/225906370-0cf6bb5f-f361-4cbf-b571-e5c379ba5596.png)
+
+ 
