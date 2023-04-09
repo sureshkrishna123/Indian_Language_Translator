@@ -305,7 +305,7 @@ if app_mode=='speech to text':
     st.title("Speech to Text")
     st.header('Language translation taking text as an input')
     st.markdown("Using googletrans library to detect and translate the text to your desired language")
-    st.text("Refer this link to find the language codes for src_lang and tgt_lang)
+    st.text("Refer this link to find the language codes for src_lang and tgt_lang")
     st.markdown("https://cloud.google.com/speech-to-text/docs/speech-to-text-supported-languages")
     st.text("Example: give src_lang = en and tgt_lang = te.")
     html("""<script
