@@ -27,11 +27,16 @@ st.set_page_config(layout="wide")
 st.sidebar.image('images/translate.jpg', width=300)
 st.sidebar.header('Used googletrans library to detect and translate the text and using google speech recognition, it will translate any lanuguage to your desired language')
 st.sidebar.markdown('It can translate any language (default-"english")')
-
+st.markdown(
+    """
+    <script type="module" src="https://gradio.s3-us-west-2.amazonaws.com/3.24.1/gradio.js"></script>
+    """,
+    unsafe_allow_html=True,
+)
 
 app_mode = st.sidebar.radio(
     "",
-    ("About Me","Language Translation","text to speech"),
+    ("About Me","text to text","text to speech","speech to text","speech to speech"),
 )
 
 
@@ -56,7 +61,7 @@ if app_mode =='About Me':
                 ''')
                
 
-if app_mode=='Language Translation':
+if app_mode=='text to text':
   st.image(os.path.join('./images','translate.jpg'),use_column_width=True )
   st.title("Language Translation")
   st.header('Language translation taking text as an input')
@@ -300,3 +305,9 @@ if app_mode=='text to speech':
 
     st.markdown('---')
     
+if app_mode=='speech to text':
+    st.image(os.path.join('./images','translate.jpg'),use_column_width=True )
+    st.title("Speech to Text")
+    st.header('Language translation taking text as an input')
+    st.markdown("Using googletrans library to detect and translate the text to your desired language")
+    st.markdown("""<gradio-app src="https://sureshkrishna22-automatic-speech-recognition-and-translation.hf.space"></gradio-app>""",unsafe_allow_html=True,)
