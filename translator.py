@@ -19,7 +19,7 @@ from PIL import ImageDraw
 import json
 import googletrans
 from googletrans import Translator
-
+from streamlit.components.v1 import html
 
 
 
@@ -27,12 +27,7 @@ st.set_page_config(layout="wide")
 st.sidebar.image('images/translate.jpg', width=300)
 st.sidebar.header('Used googletrans library to detect and translate the text and using google speech recognition, it will translate any lanuguage to your desired language')
 st.sidebar.markdown('It can translate any language (default-"english")')
-st.markdown(
-    """
-    <script type="module" src="https://gradio.s3-us-west-2.amazonaws.com/3.24.1/gradio.js"></script>
-    """,
-    unsafe_allow_html=True,
-)
+
 
 app_mode = st.sidebar.radio(
     "",
@@ -310,7 +305,11 @@ if app_mode=='speech to text':
     st.title("Speech to Text")
     st.header('Language translation taking text as an input')
     st.markdown("Using googletrans library to detect and translate the text to your desired language")
-    st.markdown("""
+    html("""<script
+	    type="module"
+	    src="https://gradio.s3-us-west-2.amazonaws.com/3.24.1/gradio.js"
+        ></script>
+
         <gradio-app src="https://sureshkrishna22-automatic-speech-recognition-and-translation.hf.space"></gradio-app>
-        """,unsafe_allow_html=True,
-               )
+        """
+        )
