@@ -59,7 +59,6 @@ if app_mode =='About Me':
 if app_mode=='text to text':
   st.image(os.path.join('./images','translate.jpg'),use_column_width=True )
   st.title("Language Translation")
-  st.header('Language translation taking text as an input')
   st.markdown("Using googletrans library to detect and translate the text to your desired language")
   #st.text("Detect the objects in images")
   
@@ -137,7 +136,6 @@ if app_mode=='text to speech':
     
     st.image(os.path.join('./images','translate.jpg'),use_column_width=True )
     st.title("Text to speech")
-    st.header('Language translation taking text as an input')
     st.markdown("Using googletrans library to detect and translate the text to your desired language")
   #st.text("Detect the objects in images")
     try:
@@ -303,7 +301,6 @@ if app_mode=='text to speech':
 if app_mode=='speech to text':
     st.image(os.path.join('./images','translate.jpg'),use_column_width=True )
     st.title("Speech to Text")
-    st.header('Language translation taking text as an input')
     st.markdown("Using googletrans library to detect and translate the text to your desired language")
     st.text("Refer this link to find the language codes for src_lang and tgt_lang")
     st.markdown("https://cloud.google.com/speech-to-text/docs/speech-to-text-supported-languages")
