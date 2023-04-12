@@ -307,10 +307,9 @@ if app_mode=='speech to text':
     st.text("Example: give src_lang = en and tgt_lang = te (i.e. English to Telugu)")
     st.text("wait for sometime to load and display the model")
     html("""<script
-	    type="module"
-	    src="https://gradio.s3-us-west-2.amazonaws.com/3.24.1/gradio.js"
-        ></script>
+	type="module"
+	src="https://gradio.s3-us-west-2.amazonaws.com/3.24.1/gradio.js"></script>
+	<gradio-app src="https://sureshkrishna22-automatic-speech-recognition-and-translation.hf.space"></gradio-app>
 
-        <gradio-app src="https://sureshkrishna22-automatic-speech-recognition-and-translation.hf.space"></gradio-app>
         """,height=1000,
         )
