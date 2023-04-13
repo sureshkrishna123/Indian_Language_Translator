@@ -311,5 +311,6 @@ if app_mode=='speech to text':
 	src="https://gradio.s3-us-west-2.amazonaws.com/3.24.1/gradio.js"></script>
 	<gradio-app src="https://sureshkrishna22-automatic-speech-recognition-and-translation.hf.space"></gradio-app>
 
+
         """,height=1000,
         )
